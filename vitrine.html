@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>RawEvents - Vitrine </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+    <link rel="icon" type="image/png" sizes="16x16" href="logov2.png">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="asset/css/vitrine-style.css">
+</head>
+
+
+
+
+<body>
+
+	<header>
+		<div class="hautdepage">
+		<h1 class ="societe"><img src ="asset/image/logo.png" width="100px" alt="HTML"
+	 	> RawEvents</h1>
+		<nav>
+			<ul>
+				<li><a href="#" class="gris"> Se connecter </a></li>
+				<li><a href="#evenement" class="gris"> Événements</a></li>
+				<li><a href="#contacte" class="gris"> Nous contacter </a></li>
+			</ul>
+		</nav>
+		</div>
+		<div>
+			<h1 class="titre2">Organisez des événements pour faire vivre votre entreprise !</h1>
+		</div>
+		</div>
+	</header>
+
+	<main>
+		<div class="description">
+			<p>Organisateur d'évènements musicaux pour les 
+			séminaires d’entreprise depuis 2021. Nous avons déjà organisé plus de 10 séminaires dans tout Bordeaux !</p>
+		</div>
+<div class ="carte" id="map" style="width: 70vh; height: 70vh; border-radius: 100%; margin: auto ;"></div>
+<script>
+
+	var mymap = L.map('map').setView([44.845400, -0.570800], 11.5);
+
+	L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+		id: 'mapbox/streets-v11',
+		tileSize: 512,
+		zoomOffset: -1
+	}).addTo(mymap);
+
+	L.marker([44.865174, -0.560546]).addTo(mymap);
+
+	L.marker([44.870747, -0.532641]).addTo(mymap);
+
+	L.marker([44.867290, -0.593724]).addTo(mymap);
+
+	L.marker([44.893118, -0.575985]).addTo(mymap);
+
+	L.marker([44.849588, -0.640684]).addTo(mymap);
+
+	L.marker([44.807486, -0.627809]).addTo(mymap)
+
+	L.marker([44.805976, -0.583969]).addTo(mymap)
+
+	L.marker([44.809900, -0.551512]).addTo(mymap)
+
+
+</script>
+
+
+
+		<div class="mesevenements">
+				<h2 id="evenement">Nos événements les plus aimés</h2>
+			<div class="untruc">
+			<div class="lesdestinations">
+				<article class="comedie">
+					<h2 class="maj fond">Comédie musical</h2>
+					<p class="fond">Evadez vous dans un autre monde pour oublier toutes vos difficltées</p>
+				</article>
+
+				<article class="rock">
+					<h2 class="maj fond">Concert de rock</h2>
+					<p class="fond">Plongez votre entreprise dans une ambiance rock'n roll pour vous amusez et décompresser.</p>
+				</article>
+
+				<article class="classique">
+					<h2 class="maj fond">Opéra</h2>
+					<p class="fond">Entrez dans une ambiance reposante pour détendre toute votre entreprise</p>
+				</article>
+
+				<article class="comedie">
+					<h2 class="maj fond">Comédie musical</h2>
+					<p class="fond">Evadez vous dans un autre monde pour oublier toutes vos difficltées</p>
+				</article>
+
+				<article class="rock">
+					<h2 class="maj fond">Concert de rock</h2>
+					<p class="fond">Plongez votre entreprise dans une ambiance rock'n roll pour vous amusez et décompresser.</p>
+				</article>
+
+				<article class="classique">
+					<h2 class="maj fond">Opéra</h2>
+					<p class="fond">Entrez dans une ambiance reposante pour détendre toute votre entreprise</p>
+				</article>
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+	<footer>
+		<div id="contacte">114 Rue Lucien Faure, 33300 Bordeaux. </div> 
+		<div id="contacte">rowevent.contacte@gmail.com <br> +33 9 85 42 65 82</div>
+	</footer>
+
+</body>
+</html>

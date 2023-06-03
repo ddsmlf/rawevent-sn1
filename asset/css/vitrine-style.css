@@ -1,0 +1,193 @@
+*{
+font-family: 'Roboto Mono', monospace;
+box-sizing: border-box;
+}
+
+body{
+	margin: 0%;
+}
+
+header{
+	background : linear-gradient(to right, #171717, #515151);
+}
+
+
+.societe{
+	padding-left: 2vh;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 35px;
+}
+
+
+.hautdepage{
+	padding-bottom: 10px;
+	padding-left:10px ;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color:  #300787 ;
+	color: white;
+	border-radius: 0px 0px 20px 20px;
+
+}
+
+
+a{
+		text-decoration: none;
+
+}
+
+ul{
+		list-style: none;
+		display: flex;
+		padding-right: 5px;
+}
+
+li{
+	padding-right: 30px;
+}
+
+
+.gris{
+	color: lightgrey;
+}
+
+.titre2{
+	width:auto;
+	text-transform: uppercase;
+	background-color: white;
+	width: auto;
+	background-image: url('fondacceuil.jpg');
+	border-color: white;
+	background-repeat: no-repeat;
+	padding-bottom:10% ;
+	padding-top: 10% ;
+	background-size: cover;
+	text-align: center;
+	justify-content: center;
+	background-position: top;
+	color: white;
+	margin-top: 0;
+}
+
+
+h2{
+	text-align: center;
+	margin-top: 30px;
+	font-size: 30px;
+}
+
+.description{
+	color:  #300787;
+	text-align: center;
+}
+
+.lesdestinations{
+	padding-bottom: 10px;
+	padding-left:10px ;
+	  display: flex;
+  justify-content: space-between;
+  width: 10vw;
+
+}
+
+.maj{
+	text-transform: uppercase;	
+}
+
+.fond{
+	background-color: white;
+	margin: 0;
+	padding: 5px;
+}
+
+.mesevenements{
+  max-width: 100em;                      /* largeur de la fenêtre */
+  margin: 1em auto 2em;
+  border: 10px solid #F0F0FF;
+  overflow: hidden;                     /* masque tout ce qui dépasse */
+  box-shadow: 0 .25em .5em #CCC,inset 0 0 1em .25em #CCC;
+
+}
+
+.untruc{
+  white-space: nowrap;                  /* pas de passage à la ligne */
+  animation: defilement-rtl 10s infinite linear;
+}
+
+article{
+
+	border-color: #300787;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	margin-right: 15%;
+	margin-left: 15%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	text-align: center;
+	padding-right: 2% ;
+	padding-left: 2%;
+	padding-bottom: 30vh;
+	padding-top: 30vh;
+	color: #300787;
+	margin: 10px;
+}
+
+.comedie{
+background-image: url('comedie.jpg');
+background-size: cover;
+background-position: top;
+
+}
+
+.rock{
+background-image: url('rock.jpg');
+background-size: cover;
+background-position: top;
+
+
+}
+
+.classique{
+background-image: url('classique.jpg');
+background-size: cover;
+background-position: top;
+
+}
+
+
+@keyframes defilement-rtl {
+  0% {
+    transform: translate3d(0,0,0);      /* position initiale à droite */
+  }
+  100% {
+    transform: translate3d(-145%,0,0);  /* position finale à gauche */
+  }
+}
+
+
+.bord{
+	border-radius: 20px;
+}
+
+
+
+footer{
+	padding: 10px;
+	background-color: #313131;
+	padding-bottom: 30px;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+}
+
+
+@media screen and (min-width : 0px ) and (max-width: 900px){
+	.lesdestinations{
+		display: block;
+	}
+}
+

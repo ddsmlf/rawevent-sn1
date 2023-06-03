@@ -1,0 +1,77 @@
+
+*,html{	
+	font-family: 'Roboto Mono', monospace;
+	box-sizing: border-box;
+	margin: 0;
+}
+header {
+	background-color:grey;
+	height: 10vh;
+}
+main{
+	background-color: white;
+	height: 80vh;
+}
+footer{
+	background-color: lightgrey;
+	height: 10vh;
+}
+.spantitre{
+	background-color: lightgrey;
+	border-radius: 15px;
+	padding: 10px;
+}
+.tables{
+	text-align: center ;
+	padding: 1%;
+
+}
+span:hover {
+	cursor: pointer;
+	background-color: grey;
+	transition-duration: 0.5s;
+}
+.element {
+	height: 45vh;
+	width: 65vw;
+	display: none;
+	
+
+}
+.elementint{
+	margin: auto;
+	display: inline;
+}
+
+.int{
+	padding-top: 5vh;
+	display: flex;
+	height: 25vh;
+	width: auto;
+	justify-content: center;
+}
+.grosblock{
+
+	background-color: lightgrey;
+	height: 45vh;
+	width: 65vw;
+	margin: auto;
+	border-radius: 15px;
+}
+label{
+	font-size: 25px;
+
+}
+input{
+	width: 30vw;
+	height: 5vh;
+	
+}
+.bt{
+	margin-top: 4vh;
+	text-align: center;
+}
+button{
+	font-size: 25px;
+}
+
